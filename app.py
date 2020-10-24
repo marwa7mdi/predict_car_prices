@@ -16,6 +16,7 @@ def result(result):
 
 @app.route("/", methods=["POST"])
 def predict():
+    aspiration= request.form['aspiration']
     carbody = request.form['carbody']
     wheelbase =  request.form['wheelbase']
     carlength =  request.form['carlength']
@@ -23,7 +24,7 @@ def predict():
     carheight =  request.form['carheight']
     curbweight =  request.form['curbweight']
     enginesize =  request.form['enginesize']
-    fuelsystem =  request.form['fuelsystem']
+
     boreratio =  request.form['boreratio']
     stroke=request.form['stroke']
     compressionratio =  request.form['compressionratio']
@@ -32,7 +33,7 @@ def predict():
     citympg =  request.form['citympg']
     highwaympg =  request.form['highwaympg']  
     
-    result = int(round(model.predict([[carbody, wheelbase, carlength, carwidth, carheight, curbweight, enginesize, fuelsystem, boreratio, stroke, compressionratio, horsepower, peakrpm, citympg, highwaympg]])[0]))
+    result = int(round(model.predict([[aspiration,carbody, wheelbase, carlength, carwidth, carheight, curbweight, enginesize,  boreratio, stroke, compressionratio, horsepower, peakrpm, citympg, highwaympg]])[0]))
    # return render_template("result.html", result=result)
    # response = make_response()
    # response.headers['X-Parachutes'] = 'parachutes are cool'
