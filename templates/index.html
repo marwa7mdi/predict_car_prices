@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="/static/images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	<!--===============================================================================================-->
+
+	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="POST" action="/">
+				<span class="contact100-form-title">
+					Machine Learning for Car prices Prediction
+				</span>
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">car body</span>
+					<div>
+						<select class="selection-2" name="carbody" required>
+							<option value="" disabled selected hidden>Select carbody</option>
+							<option value="0">convertable</option>
+							<option value="1">hardtop</option>
+							<option value="2">hatchback</option>
+							<option value="3">sedan</option>
+							<option value="4">wagon</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="wheel base is required">
+					<span class="label-input100">wheel base</span>
+					<input class="input100" type="text" name="wheelbase" placeholder="Enter the wheel base" >
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="car length is required">
+					<span class="label-input100">car length</span>
+					<input class="input100" type="text" name="carlength" placeholder="Enter the car length" min="120" max="500">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="car width is required">
+					<span class="label-input100">car width</span>
+					<input class="input100" type="text" name="carwidth" placeholder="Enter the car width">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="car height is required">
+					<span class="label-input100">car height</span>
+					<input class="input100" type="text" name="carheight" placeholder="Enter the car height">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+
+					<span class="label-input100">fuel system</span>
+					<div>
+						<select class="selection-2" name="fuelsystem" required>
+							<option value="" disabled selected hidden>Select fuel system</option>
+							<option value="0">1bbl</option>
+							<option value="1">2bbl</option>
+							<option value="2">4bbl</option>
+							<option value="3">idi</option>
+							<option value="4">mfi</option>
+							<option value="5">mpfi</option>
+							<option value="6">spdi</option>
+							<option value="7">spfi</option>
+
+						</select>
+					</div>
+				</div>
+				<div>
+					<div class="wrap-input100 validate-input" data-validate="curb weight is required">
+						<span class="label-input100">curb weight</span>
+						<input class="input100" type="text" name="curbweight" placeholder="Enter the curb weight" >
+						<span class="focus-input100"></span>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="engine size is required">
+					<span class="label-input100">engine size</span>
+					<input class="input100" type="text" name="enginesize" placeholder="Enter the engine size">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="bore ratio is required">
+					<span class="label-input100">bore ratio</span>
+					<input class="input100" type="text" name="boreratio" placeholder="Enter the bore ratio">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="stroke is required">
+					<span class="label-input100">stroke</span>
+					<input class="input100" type="text" name="stroke" placeholder="Enter the stroke">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="compression ratio is required">
+					<span class="label-input100">compression ratio</span>
+					<input class="input100" type="text" name="compressionratio"
+						placeholder="Enter the compression ratio">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="horse power is required">
+					<span class="label-input100">horse power</span>
+					<input class="input100" type="text" name="horsepower" placeholder="Enter the horse power">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="peak rpm is required">
+					<span class="label-input100">peak rpm</span>
+					<input class="input100" type="text" name="peakrpm" placeholder="Enter the peak rpm">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="city mpg is required">
+					<span class="label-input100"> city mpg</span>
+					<input class="input100" type="text" name="citympg" placeholder=" city mpg">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="highway mpg is required">
+					<span class="label-input100">highway mpg</span>
+					<input class="input100" type="text" name="highwaympg" placeholder="Enter the highway mpg">
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								predict car price
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+
+		
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+	<!--===============================================================================================-->
+	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/static/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/static/vendor/bootstrap/js/popper.js"></script>
+	<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/static/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="/static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/static/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="/static/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+	<b class="marwa">Marwa Hamdy</b>
+</body>
+
+</html>
